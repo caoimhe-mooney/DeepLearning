@@ -24,7 +24,7 @@ def find_root(f, df, x0):
         
             
 #< check if derivative is 0, print a message and return if so >
-        next_x = x - f(x) / derivative   #< compute using Newton-Raphson formula >
+        next_x = x - (f(x) / derivative)   #< compute using Newton-Raphson formula >
         print("{} - {}".format(i, x))
         
         if(abs(x - next_x) < 0.0001):#< insert expression to compute absolute difference of x and next_x > < 0.0001:
@@ -50,7 +50,7 @@ def d_f1(x):
 
 def f2(x):
     return (0.75 - 1 / (1 + math.exp(-abs(x))))
-    return((3 - math.exp(-x) / math.sqrt(abs(x))))
+    #return((3 - math.exp(-x) / math.sqrt(abs(x))))
 
 def d_f2(x):
     h = 0.1
