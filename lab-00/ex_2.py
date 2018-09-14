@@ -28,7 +28,7 @@ def find_root(f, df, x0):
         print("{} - {}".format(i, x))
         
         if(abs(x - next_x) < 0.0001):#< insert expression to compute absolute difference of x and next_x > < 0.0001:
-            return x
+            return None
         
 #<update x>
         x = next_x
@@ -50,7 +50,7 @@ def d_f1(x):
 
 def f2(x):
     return (0.75 - 1 / (1 + math.exp(-abs(x))))
-    return((3 - math.exp(-x) / math.sqrt(abs(x))))
+    #return((3 - math.exp(-x) / math.sqrt(abs(x))))
 
 def d_f2(x):
     h = 0.1
