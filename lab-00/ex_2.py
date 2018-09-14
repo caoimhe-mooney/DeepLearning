@@ -22,7 +22,7 @@ def find_root(f, df, x0):
     while True:
         derivative = df(x)
         
-        if(dervative == 0):
+        if(derivative == 0):
             print("derivative in 0")
             return None
             
