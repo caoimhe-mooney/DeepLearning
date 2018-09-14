@@ -23,6 +23,7 @@ def find_root(f, df, x0):
         derivative = df(x)
         
         if(dervative == 0):
+            print("derivative in 0")
             return None
             
 #< check if derivative is 0, print a message and return if so >
