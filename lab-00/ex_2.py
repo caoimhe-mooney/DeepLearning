@@ -50,7 +50,7 @@ def d_f1(x):
 
 def f2(x):
     return (0.75 - 1 / (1 + math.exp(-abs(x))))
-    #return((3 - math.exp(-x) / math.sqrt(abs(x))))
+    return((3 - math.exp(-x) / math.sqrt(abs(x))))
 
 def d_f2(x):
     h = 0.1
