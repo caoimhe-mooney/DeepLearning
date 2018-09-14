@@ -22,13 +22,15 @@ def find_root(f, df, x0):
     while True:
         derivative = df(x)
         
+        if(dervative == 0):
+            return None
             
 #< check if derivative is 0, print a message and return if so >
         next_x = x - (f(x) / derivative)   #< compute using Newton-Raphson formula >
         print("{} - {}".format(i, x))
         
         if(abs(x - next_x) < 0.0001):#< insert expression to compute absolute difference of x and next_x > < 0.0001:
-            return None
+            return x
         
 #<update x>
         x = next_x
