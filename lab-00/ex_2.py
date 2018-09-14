@@ -30,7 +30,7 @@ def find_root(f, df, x0):
         next_x = x - (f(x) / derivative)   #< compute using Newton-Raphson formula >
         print("{} - {}".format(i, x))
         
-        if(abs(x - next_x) < 0.0001):#< insert expression to compute absolute difference of x and next_x > < 0.0001:
+        if((abs(x - next_x)) < 0.0001):#< insert expression to compute absolute difference of x and next_x > < 0.0001:
             return x
         
 #<update x>
