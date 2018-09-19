@@ -58,7 +58,7 @@ def linear_regression(X, y, eps=0):
     # See lecture handout 1, slide 35.
     print("Eps: " + str(eps))
     
-    I = np.identity(x)
+    I = np.identity(M)
     M = M + eps*I
     
     #
