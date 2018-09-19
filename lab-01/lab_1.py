@@ -75,10 +75,12 @@ def linear_regression(X, y, eps=0):
 
 # EXERCISE 3: implement computation of mean squared error between two vectors
 def mean_squared_error(y1, y2):
+    
+    mse = (1 /2) * (linear_regression(y1, y2, eps=0))**2;
     # You can use '-' to compute the elementwise difference of numpy vectors (i.e. y1 - y2).
     # You can use '**' for elementwise exponentiation of a numpy vector.
     # You can use the numpy function 'mean' to compute the mean of a vector.
-    return 0  # replace this with your answer.
+    return mse  # replace this with your answer.
 
 # EXERCISE 4: return the number of the best order for the supplied
 # data (see the notebook).
