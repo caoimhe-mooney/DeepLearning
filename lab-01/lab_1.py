@@ -57,6 +57,10 @@ def linear_regression(X, y, eps=0):
     # EXERCISE 2: implement Tikhonov regularisation.
     # See lecture handout 1, slide 35.
     print("Eps: " + str(eps))
+    
+    I = np.identity(X)
+    M = M + eps*I
+    
     #
     # <add 'eps' times the identity matrix to M>
     # Hints:
