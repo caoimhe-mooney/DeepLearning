@@ -31,7 +31,7 @@ def polynomial_design_matrix(x, order=1):
     # Assign to the element (row,col) of a numpy matrix with: M[r,c] = <expression>
     for p in range(0, order+1):
         for i in range(x.size):
-            X[i,p] = X[i]**p
+            X[i,p] = x[i]**p
             
             
     # Hint:
@@ -56,7 +56,7 @@ def linear_regression(X, y, eps=0):
 
     # EXERCISE 2: implement Tikhonov regularisation.
     # See lecture handout 1, slide 35.
-    # print("Eps: " + str(eps))
+    print("Eps: " + str(eps))
     #
     # <add 'eps' times the identity matrix to M>
     # Hints:
