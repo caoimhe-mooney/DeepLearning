@@ -58,7 +58,7 @@ def cross_entropy(w, X, y):
     n = y.shape[0]  # 'n' is the number of observations
 
     # Use the 'predict' function to compute the predicted probability of label 1
-    p = [predict(w, X)] #<replace '[0]' with a call to the predict function>
+    p = predict(w, X) #<replace '[0]' with a call to the predict function>
 
     # Now compute the cross entropy.
     #
