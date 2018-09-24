@@ -90,9 +90,9 @@ def cross_entropy(w, X, y):
 # Note that you should return gradient averaged over all the observations, which
 # differs slightly from the definition in the notes.
 def gradient(w, X, y):
-    n = y.shape[0]                 # number of observations
-    p = [0]                        # <replace '[0]' with a call to the predict function>
-    grad = [0]                     # use 'np.dot' to compute the vector
+    n = y.shape[X]                 # number of observations
+    p = [predict(X,y)]                        # <replace '[0]' with a call to the predict function>
+    grad = [np.(n,p)]                     # use 'np.dot' to compute the vector
     return grad / n                # Average over the (number of) observations
 
 #
