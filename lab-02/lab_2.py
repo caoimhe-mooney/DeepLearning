@@ -74,7 +74,7 @@ def cross_entropy(w, X, y):
     # accumulator as appropriate (using 'math.log').
 
     # Don't forget to return the average rather than the sum.
-    E = np.sum(-y*np.log(p+eps)-(1-y)*np.log(1-p+esp))
+    E = np.sum(-y*np.log(p+eps)-(1-y)*np.log(1-p+eps))
     return E
 
 #
