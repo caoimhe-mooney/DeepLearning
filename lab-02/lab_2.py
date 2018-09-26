@@ -113,7 +113,7 @@ def question_3():
 def predict_class(w, X, t):
     # replace with a vector of comparisons of a call to predict with 't':
      
-    return predict(w.X) > t
+    return predict(w,X) > t
     #return np.zeros((X.shape[0],1))
 
 #
